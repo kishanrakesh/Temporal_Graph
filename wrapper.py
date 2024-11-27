@@ -45,7 +45,7 @@ def create_execution_table(data, title):
     print(f"\n{title}:\n")
     print(df)
     # Save table to a CSV file
-    df.to_csv(f"{title.lower().replace(' ', '_')}.csv", index=False)
+    df.to_csv(f"tables/{title.lower().replace(' ', '_')}.csv", index=False)
 
 # Main execution
 if __name__ == "__main__":
@@ -122,25 +122,25 @@ if __name__ == "__main__":
             data_limits,
             {pair: [entry["Execution Time (seconds)"] for entry in table_earliest_arrival if entry["Pair (Source -> Destination)"] == f"{pair[0]} → {pair[1]}"] for pair in pairs},
             "Earliest Arrival Path",
-            "earliest_arrival.png"
+            "images/earliest_arrival.png"
         )
         plot_execution_times(
             data_limits,
             {pair: [entry["Execution Time (seconds)"] for entry in table_latest_departure if entry["Pair (Source -> Destination)"] == f"{pair[0]} → {pair[1]}"] for pair in pairs},
             "Latest Departure Path",
-            "latest_departure.png"
+            "images/latest_departure.png"
         )
         plot_execution_times(
             data_limits,
             {pair: [entry["Execution Time (seconds)"] for entry in table_shortest_path if entry["Pair (Source -> Destination)"] == f"{pair[0]} → {pair[1]}"] for pair in pairs},
             "Shortest Path",
-            "shortest_path.png"
+            "images/shortest_path.png"
         )
         plot_execution_times(
             data_limits,
             {pair: [entry["Execution Time (seconds)"] for entry in table_fastest_path if entry["Pair (Source -> Destination)"] == f"{pair[0]} → {pair[1]}"] for pair in pairs},
             "Fastest Path",
-            "fastest_path.png"
+            "images/fastest_path.png"
         )
 
         print("Graphs and tables have been saved.")
