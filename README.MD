@@ -39,7 +39,7 @@ python3 -m venv venv
 source ./venv/bin/activate
 
 ### Step 3: Install Dependencies
-python3 -m pip install matplotlib
+python3 -m pip install matplotlib \n
 python3 -m pip install pandas
 python3 -m pip install python-dotenv
 python3 -m pip install neo4j
