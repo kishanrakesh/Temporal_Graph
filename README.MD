@@ -31,7 +31,7 @@ Before running the project, ensure the following are installed:
 ## Installation
 
 ### Step 1: Clone the Repository
-git clone https://github.com/kishanrakesh/Temporal_Graph.git
+git clone https://github.com/kishanrakesh/Temporal_Graph.git  
 cd Temporal_Graph
 
 ### Step 2: Create and activate a Virtual Environment
