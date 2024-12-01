@@ -43,6 +43,7 @@ python3 -m pip install matplotlib
 python3 -m pip install pandas  
 python3 -m pip install python-dotenv  
 python3 -m pip install neo4j  
+python3 -m pip install cartopy    
 
 ## Running the Project
 
