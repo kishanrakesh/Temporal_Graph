@@ -27,7 +27,7 @@ def import_data_to_neo4j(row_count):
             print("Database reset: All nodes and relationships deleted.")
 
         # Load the CSV data for airports
-        airports_df = pd.read_csv('airports.csv')
+        airports_df = pd.read_csv('data/airports.csv')
 
         # Prepare the data as a list of dictionaries for nodeRecords
         node_records = airports_df[['IATA_CODE']].dropna().to_dict('records')
@@ -44,7 +44,7 @@ def import_data_to_neo4j(row_count):
             print("Airport nodes imported into Neo4j successfully.")
 
         # Load the CSV data
-        df = pd.read_csv('flights1-1.csv')
+        df = pd.read_csv('data/flights1-1.csv')
         df=df.head(row_count)
 
         # Prepare the data as a list of dictionaries for relRecords
