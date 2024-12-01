@@ -35,14 +35,14 @@ git clone https://github.com/kishanrakesh/Temporal_Graph.git
 cd Temporal_Graph
 
 ### Step 2: Create and activate a Virtual Environment
-python3 -m venv venv
+python3 -m venv venv  
 source ./venv/bin/activate
 
 ### Step 3: Install Dependencies
-python3 -m pip install matplotlib \n
-python3 -m pip install pandas
-python3 -m pip install python-dotenv
-python3 -m pip install neo4j
+python3 -m pip install matplotlib  
+python3 -m pip install pandas  
+python3 -m pip install python-dotenv  
+python3 -m pip install neo4j  
 
 ## Running the Project
 
